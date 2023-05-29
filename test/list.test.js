@@ -85,21 +85,21 @@ test('A cloned list contains the same values as the original one', () => {
 
 test('After reversing a list, its elements are reversed', () => {
     const list = new List();
-    list.append('one');
-    list.append('two');
+    list.append('a');
+    list.append('b');
     list.reverse();
-    expect(list.get(0)).toBe('two');
-    expect(list.get(1)).toBe('one');
+    expect(list.get(0)).toBe('b');
+    expect(list.get(1)).toBe('a');
 });
 
 test('After reversing a list twice, it remains the same', () => {
     const list = new List();
-    list.append('one');
-    list.append('two');
+    list.append('a');
+    list.append('b');
     list.reverse();
     list.reverse();
-    expect(list.get(0)).toBe('one');
-    expect(list.get(1)).toBe('two');
+    expect(list.get(0)).toBe('a');
+    expect(list.get(1)).toBe('b');
 });
 
 test('We can find the first element with a certain value', () => {

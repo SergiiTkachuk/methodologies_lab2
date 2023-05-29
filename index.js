@@ -1,5 +1,5 @@
 'use strict';
-const { List } = require("./src/list.js");
+const { List } = require("./src/LinkedListArray.js");
 
 const list = new List(); // {}
 console.log(`The length of an empty list: ${list.length()}\n`);
